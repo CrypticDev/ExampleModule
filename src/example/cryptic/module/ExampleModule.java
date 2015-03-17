@@ -3,6 +3,8 @@
  */
 package example.cryptic.module;
 
+import java.util.logging.Level;
+
 import cryptic.network.module.Module;
 import cryptic.network.module.ModuleException;
 import cryptic.network.module.ModuleInfo;
@@ -21,7 +23,7 @@ public class ExampleModule extends Module
 
 	@Override
 	public void load() {
-		
+		logger.log(Level.INFO, "lol");
 	}
 
 	@Override
